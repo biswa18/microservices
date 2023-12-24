@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class AccountsDto {
-	private Long customer_id;
+	private Long account_number;
 
 	private String account_type;
 
