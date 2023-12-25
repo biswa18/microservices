@@ -6,10 +6,13 @@ import java.util.Random;
 import org.springframework.stereotype.Service;
 
 import com.eazybytes.accounts.constants.AccountsConstants;
+import com.eazybytes.accounts.dto.AccountsDto;
 import com.eazybytes.accounts.dto.CustomerDto;
 import com.eazybytes.accounts.entity.Accounts;
 import com.eazybytes.accounts.entity.Customer;
 import com.eazybytes.accounts.exception.CustomerAlreadyExistsException;
+import com.eazybytes.accounts.exception.ResourceNotFoundException;
+import com.eazybytes.accounts.mapper.AccountsMapper;
 import com.eazybytes.accounts.mapper.CustomerMapper;
 import com.eazybytes.accounts.repository.AccountsRepository;
 import com.eazybytes.accounts.repository.CustomerRepository;
@@ -43,7 +46,7 @@ public class IAccountServiceImpl implements com.eazybytes.accounts.service.IAcco
 	private Accounts createNewAccount(Customer customer) {
         var newAccount = new Accounts();
         
-        newAccount.setCustomer_id(customer.getCustomer_id());
+        newAccount.setCustomerId(customer.getCustomer_id());
         long randomAccNumber = 1000000000L + new Random().nextInt(900000000);
 
         newAccount.setCreated_by("user123");
@@ -53,5 +56,19 @@ public class IAccountServiceImpl implements com.eazybytes.accounts.service.IAcco
         newAccount.setBranch_address(AccountsConstants.ADDRESS);
         
         return newAccount;
+    }
+
+	@Override
+	public CustomerDto fetchAccount(String mobileNumber) {
+		var customer = customerRepository.findByMobileNumber(mobileNumber)
+				.orElseThrow(() -> new ResourceNotFoundException("Customer", "mobileNumber", mobileNumber));
+		
+		var accounts = accountsRepository.findByCustomerId(customer.getCustomer_id()).orElseThrow(
+				() -> new ResourceNotFoundException("Account", "customerId", customer.getCustomer_id().toString()));
+		
+		var customerDto = CustomerMapper.mapToCustomerDto(customer, new CustomerDto());
+		customerDto.setAccounts(AccountsMapper.mapToAccountsDto(accounts, new AccountsDto()));
+		
+		return customerDto;
     }
 }

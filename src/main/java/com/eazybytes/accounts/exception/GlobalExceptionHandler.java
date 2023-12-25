@@ -12,6 +12,16 @@ import com.eazybytes.accounts.dto.ErrorResponseDto;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
+	@ExceptionHandler(ResourceNotFoundException.class)
+	public ResponseEntity<ErrorResponseDto> handleResourceNotFoundException(
+			ResourceNotFoundException exception, WebRequest webRequest)
+	{
+		var errorResponseDTO = new ErrorResponseDto(
+				webRequest.getDescription(false), HttpStatus.NOT_FOUND,
+				exception.getMessage(), LocalDateTime.now());
+		
+		return new ResponseEntity<>(errorResponseDTO, HttpStatus.NOT_FOUND);
+	}
 	
 	@ExceptionHandler(CustomerAlreadyExistsException.class)
 	public ResponseEntity<ErrorResponseDto> handleCustomerAlreadyExistsException(
