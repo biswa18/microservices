@@ -11,7 +11,6 @@ import lombok.ToString;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 @ToString
 public class Accounts extends BaseEntity {
