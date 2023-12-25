@@ -16,13 +16,13 @@ import com.eazybytes.accounts.mapper.AccountsMapper;
 import com.eazybytes.accounts.mapper.CustomerMapper;
 import com.eazybytes.accounts.repository.AccountsRepository;
 import com.eazybytes.accounts.repository.CustomerRepository;
+import com.eazybytes.accounts.service.IAccountService;
 
 import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-public class IAccountServiceImpl implements com.eazybytes.accounts.service.IAccountService {
-
+public class IAccountServiceImpl implements IAccountService {
 	private AccountsRepository accountsRepository;
 	private CustomerRepository customerRepository;
 	
@@ -71,4 +71,41 @@ public class IAccountServiceImpl implements com.eazybytes.accounts.service.IAcco
 		
 		return customerDto;
     }
+
+	@Override
+    public boolean updateAccount(CustomerDto customerDto) {
+        boolean isUpdated = false;
+        var accountsDto = customerDto.getAccounts();
+        
+        if(accountsDto !=null )
+        {
+            var accounts = accountsRepository.findById(accountsDto.getAccount_number()).orElseThrow(
+                    () -> new ResourceNotFoundException("Account", "AccountNumber", accountsDto.getAccount_number().toString())
+            );
+            
+            AccountsMapper.mapToAccounts(accountsDto, accounts);
+            accounts = accountsRepository.save(accounts);
+
+            var customerId = accounts.getCustomerId();
+            var customer = customerRepository.findById(customerId).orElseThrow(
+                    () -> new ResourceNotFoundException("Customer", "CustomerID", customerId.toString())
+            );
+            
+            CustomerMapper.mapToCustomer(customerDto,customer);
+            customerRepository.save(customer);
+            isUpdated = true;
+        }
+        return  isUpdated;
+    }
+	
+	@Override
+	public boolean deleteAccount(String mobileNumber) {
+		var customer = customerRepository.findByMobileNumber(mobileNumber)
+				.orElseThrow(() -> new ResourceNotFoundException("Customer", "mobileNumber", mobileNumber));
+
+		accountsRepository.deleteByCustomerId(customer.getCustomer_id());
+		customerRepository.deleteById(customer.getCustomer_id());
+
+		return true;
+	}
 }

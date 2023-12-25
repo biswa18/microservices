@@ -12,6 +12,17 @@ import com.eazybytes.accounts.dto.ErrorResponseDto;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
+	@ExceptionHandler(Exception.class)
+	public ResponseEntity<ErrorResponseDto> handleGlobalException(
+			Exception exception, WebRequest webRequest)
+	{
+		var errorResponseDTO = new ErrorResponseDto(
+				webRequest.getDescription(false), HttpStatus.INTERNAL_SERVER_ERROR,
+				exception.getMessage(), LocalDateTime.now());
+		
+		return new ResponseEntity<>(errorResponseDTO, HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+	
 	@ExceptionHandler(ResourceNotFoundException.class)
 	public ResponseEntity<ErrorResponseDto> handleResourceNotFoundException(
 			ResourceNotFoundException exception, WebRequest webRequest)
