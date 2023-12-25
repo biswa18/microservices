@@ -1,6 +1,5 @@
 package com.eazybytes.accounts.service.impl;
 
-import java.time.LocalDateTime;
 import java.util.Random;
 
 import org.springframework.stereotype.Service;
@@ -36,8 +35,8 @@ public class IAccountServiceImpl implements IAccountService {
 			throw new CustomerAlreadyExistsException(
 					"Customer already exists with mobile number: " + customerDto.getMobile_number());
 		
-		customer.setCreated_by("user123");
-		customer.setCreated_at(LocalDateTime.now());
+//		customer.setCreated_by("user123");
+//		customer.setCreated_at(LocalDateTime.now());
 		var savedCustomer = customerRepository.save(customer); // this will fetch customer id after successfull save
 		
 		accountsRepository.save(createNewAccount(savedCustomer));
@@ -49,8 +48,8 @@ public class IAccountServiceImpl implements IAccountService {
         newAccount.setCustomerId(customer.getCustomer_id());
         long randomAccNumber = 1000000000L + new Random().nextInt(900000000);
 
-        newAccount.setCreated_by("user123");
-        newAccount.setCreated_at(LocalDateTime.now());
+//        newAccount.setCreated_by("user123");
+//        newAccount.setCreated_at(LocalDateTime.now());
         newAccount.setAccount_number(randomAccNumber);
         newAccount.setAccount_type(AccountsConstants.SAVINGS);
         newAccount.setBranch_address(AccountsConstants.ADDRESS);
