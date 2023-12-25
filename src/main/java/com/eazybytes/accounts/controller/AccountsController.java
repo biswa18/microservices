@@ -18,6 +18,7 @@ import com.eazybytes.accounts.dto.CustomerDto;
 import com.eazybytes.accounts.dto.ResponseDto;
 import com.eazybytes.accounts.service.IAccountService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
@@ -26,6 +27,10 @@ import lombok.AllArgsConstructor;
 @RequestMapping(path="/api", produces=MediaType.APPLICATION_JSON_VALUE)
 @AllArgsConstructor
 @Validated
+@Tag(
+	name = "Rest Apis for Accounts",
+	description = "CRUD Rest Apis for Accounts"
+)
 public class AccountsController {
 	private IAccountService iAccountService;
 
