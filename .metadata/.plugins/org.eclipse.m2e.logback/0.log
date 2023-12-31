@@ -1,0 +1,71 @@
+2023-12-28 01:10:59,345 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-12-28 01:13:26,457 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.eazybytes:accounts:0.0.1-SNAPSHOT @ E:\Eazy Bytes Microservices course\microservices workshop\section2\accounts\pom.xml.
+2023-12-28 01:13:27,472 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.eazybytes:cards:0.0.1-SNAPSHOT @ E:\Eazy Bytes Microservices course\microservices workshop\section2\cards\pom.xml.
+2023-12-28 01:13:27,712 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.eazybytes:loans:0.0.1-SNAPSHOT @ E:\Eazy Bytes Microservices course\microservices workshop\section2\loans\pom.xml.
+2023-12-28 01:13:29,122 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /accounts/src/main/java
+2023-12-28 01:13:29,122 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /accounts/src/main/resources
+2023-12-28 01:13:29,131 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /accounts/src/main/resources
+2023-12-28 01:13:29,142 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /accounts/src/test/java
+2023-12-28 01:13:29,142 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /accounts/src/test/resources
+2023-12-28 01:13:30,159 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /loans/src/main/java
+2023-12-28 01:13:30,160 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /loans/src/main/resources
+2023-12-28 01:13:30,165 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /loans/src/main/resources
+2023-12-28 01:13:30,170 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /loans/src/test/java
+2023-12-28 01:13:30,171 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /loans/src/test/resources
+2023-12-28 01:13:30,656 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cards/src/main/java
+2023-12-28 01:13:30,656 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cards/src/main/resources
+2023-12-28 01:13:30,660 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cards/src/main/resources
+2023-12-28 01:13:30,666 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cards/src/test/java
+2023-12-28 01:13:30,667 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cards/src/test/resources
+2023-12-28 01:13:31,177 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 3 project(s) in 8 sec
+2023-12-28 01:13:31,306 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-12-28 01:13:32,758 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.eazybytes:cards:0.0.1-SNAPSHOT @ E:\Eazy Bytes Microservices course\microservices workshop\section2\cards\pom.xml.
+2023-12-28 01:13:33,891 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.eazybytes:loans:0.0.1-SNAPSHOT @ E:\Eazy Bytes Microservices course\microservices workshop\section2\loans\pom.xml.
+2023-12-28 01:13:35,166 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cards/src/main/java
+2023-12-28 01:13:35,166 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cards/src/main/resources
+2023-12-28 01:13:35,167 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cards/src/main/resources
+2023-12-28 01:13:35,167 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cards/src/test/java
+2023-12-28 01:13:35,167 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cards/src/test/resources
+2023-12-28 01:13:35,714 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /loans/src/main/java
+2023-12-28 01:13:35,714 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /loans/src/main/resources
+2023-12-28 01:13:35,715 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /loans/src/main/resources
+2023-12-28 01:13:35,715 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /loans/src/test/java
+2023-12-28 01:13:35,716 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /loans/src/test/resources
+2023-12-28 01:13:36,437 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 2 poms: local refresh takes 0.00 sec, refresh facades takes 3.00 sec, update config takes 1.00 sec 
+2023-12-28 01:13:39,058 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:13:39,110 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:13:39,121 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\Eazy Bytes Microservices course\microservices workshop\section2\accounts\src\test\resources
+2023-12-28 01:13:40,338 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:13:40,362 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:13:40,369 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\Eazy Bytes Microservices course\microservices workshop\section2\cards\src\test\resources
+2023-12-28 01:13:41,190 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:13:41,216 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:13:41,227 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\Eazy Bytes Microservices course\microservices workshop\section2\loans\src\test\resources
+2023-12-28 01:15:52,913 [Worker-3: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.eazybytes:accounts:0.0.1-SNAPSHOT @ E:\Eazy Bytes Microservices course\microservices workshop\section2\accounts\pom.xml.
+2023-12-28 01:15:53,820 [Worker-3: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.eazybytes:cards:0.0.1-SNAPSHOT @ E:\Eazy Bytes Microservices course\microservices workshop\section2\cards\pom.xml.
+2023-12-28 01:15:54,038 [Worker-3: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.eazybytes:loans:0.0.1-SNAPSHOT @ E:\Eazy Bytes Microservices course\microservices workshop\section2\loans\pom.xml.
+2023-12-28 01:15:55,338 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /accounts/src/main/java
+2023-12-28 01:15:55,339 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /accounts/src/main/resources
+2023-12-28 01:15:55,342 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /accounts/src/main/resources
+2023-12-28 01:15:55,347 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /accounts/src/test/java
+2023-12-28 01:15:55,348 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /accounts/src/test/resources
+2023-12-28 01:15:55,895 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /loans/src/main/java
+2023-12-28 01:15:55,895 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /loans/src/main/resources
+2023-12-28 01:15:55,899 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /loans/src/main/resources
+2023-12-28 01:15:55,903 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /loans/src/test/java
+2023-12-28 01:15:55,904 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /loans/src/test/resources
+2023-12-28 01:15:56,240 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cards/src/main/java
+2023-12-28 01:15:56,241 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cards/src/main/resources
+2023-12-28 01:15:56,244 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cards/src/main/resources
+2023-12-28 01:15:56,250 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cards/src/test/java
+2023-12-28 01:15:56,250 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cards/src/test/resources
+2023-12-28 01:15:56,519 [Worker-3: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 3 project(s) in 5 sec
+2023-12-28 01:15:57,299 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:15:57,321 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:15:57,328 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\Eazy Bytes Microservices course\microservices workshop\section2\accounts\src\test\resources
+2023-12-28 01:15:58,160 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:15:58,185 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:15:58,191 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\Eazy Bytes Microservices course\microservices workshop\section2\cards\src\test\resources
+2023-12-28 01:15:58,662 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:15:58,683 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-28 01:15:58,689 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\Eazy Bytes Microservices course\microservices workshop\section2\loans\src\test\resources
